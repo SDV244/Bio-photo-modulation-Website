@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Lumina</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container flex-between">
+            <div class="logo">
+                <a href="/" style="font-size: 1.5rem; font-weight: 800; color: var(--color-primary);">
+                    LUMINA<span style="color: var(--color-accent);">.</span>
+                </a>
+            </div>
+            <nav class="nav-menu flex-center" style="gap: 2rem;">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/products/" class="nav-link">Products</a>
+                <a href="/science/" class="nav-link">Science</a>
+                <a href="/sports/" class="nav-link">Sports</a>
+                <a href="/contact/" class="nav-link active">Contact</a>
+            </nav>
+            <div class="actions flex-center">
+                <a href="/contact/" class="btn btn-primary">Request Info</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container grid-2">
+            <div>
+                <h1>Get in Touch</h1>
+                <p class="mb-4">Have questions about our devices? Want a custom quote for your clinic or team? Fill out
+                    the form and our specialists will get back to you.</p>
+
+                <div class="mb-4">
+                    <h3>Contact Info</h3>
+                    <p>📧 info@luminapbm.com</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <form id="contact-form">
+                    <div class="mb-2">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Name</label>
+                        <input type="text" placeholder="Your Name"
+                            style="width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: var(--radius-sm);">
+                    </div>
+
+                    <div class="mb-2">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email</label>
+                        <input type="email" placeholder="you@example.com"
+                            style="width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: var(--radius-sm);">
+                    </div>
+
+                    <div class="mb-2">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">I am a...</label>
+                        <select
+                            style="width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: var(--radius-sm);">
+                            <option>Patient / Home User</option>
+                            <option>Athlete / Coach</option>
+                            <option>Health Professional</option>
+                            <option>Clinic Owner</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-2">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
+                        <textarea rows="4" placeholder="How can we help?"
+                            style="width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: var(--radius-sm);"></textarea>
+                    </div>
+
+                    <div class="mb-2">
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                            <input type="checkbox"> I agree to the privacy policy and to receive communications.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

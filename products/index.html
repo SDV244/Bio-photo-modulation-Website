@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | Lumina</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header (Same as Home) -->
+    <header class="header">
+        <div class="container flex-between">
+            <div class="logo">
+                <a href="/" style="font-size: 1.5rem; font-weight: 800; color: var(--color-primary);">
+                    LUMINA<span style="color: var(--color-accent);">.</span>
+                </a>
+            </div>
+            <nav class="nav-menu flex-center" style="gap: 2rem;">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/products/" class="nav-link active">Products</a>
+                <a href="/science/" class="nav-link">Science</a>
+                <a href="/sports/" class="nav-link">Sports</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </nav>
+            <div class="actions flex-center">
+                <a href="/contact/" class="btn btn-primary">Request Info</a>
+                <button class="mobile-menu-btn btn btn-outline"
+                    style="margin-left: 1rem; padding: 0.5rem;">Menu</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="section" style="background: var(--color-primary); color: white;">
+        <div class="container text-center">
+            <h1>Professional Grade LED Therapy</h1>
+            <p style="color: #94A3B8; max-width: 600px; margin: 0 auto;">From targeted relief to full-body performance,
+                discover the device that fits your needs.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <!-- Filters -->
+            <div class="flex-center mb-4" style="gap: 1rem; flex-wrap: wrap;">
+                <button class="btn btn-primary">All</button>
+                <button class="btn btn-outline">Home Use</button>
+                <button class="btn btn-outline">Professional</button>
+                <button class="btn btn-outline">Sports</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid-3">
+                <!-- Product 1 -->
+                <div class="card">
+                    <div
+                        style="height: 200px; background: #f1f5f9; border-radius: var(--radius-sm); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 100px; height: 150px; background: #cbd5e1; border: 2px solid #94a3b8;"></div>
+                    </div>
+                    <h3>Lumina Pro 300</h3>
+                    <p class="text-accent" style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem;">Targeted
+                        Therapy</p>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;">Perfect for
+                        localized pain relief and facial skin health. Compact and powerful.</p>
+                    <div class="flex-between">
+                        <span style="font-weight: 700;">$399</span>
+                        <button class="btn btn-sm btn-outline add-to-cart" data-product="Lumina Pro 300">Add to
+                            Quote</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="card">
+                    <div
+                        style="height: 200px; background: #f1f5f9; border-radius: var(--radius-sm); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 120px; height: 180px; background: #cbd5e1; border: 2px solid #94a3b8;"></div>
+                    </div>
+                    <h3>Lumina Pro 600</h3>
+                    <p class="text-accent" style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem;">Half Body
+                    </p>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;">Ideal for back
+                        pain, muscle recovery, and larger treatment areas.</p>
+                    <div class="flex-between">
+                        <span style="font-weight: 700;">$699</span>
+                        <button class="btn btn-sm btn-outline add-to-cart" data-product="Lumina Pro 600">Add to
+                            Quote</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="card">
+                    <div
+                        style="height: 200px; background: #f1f5f9; border-radius: var(--radius-sm); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 140px; height: 190px; background: #cbd5e1; border: 2px solid #94a3b8;"></div>
+                    </div>
+                    <h3>Lumina Elite 1500</h3>
+                    <p class="text-accent" style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem;">Full Body
+                        Performance</p>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;">The ultimate
+                        choice for athletes and clinics. Maximum irradiance and coverage.</p>
+                    <div class="flex-between">
+                        <span style="font-weight: 700;">$1,299</span>
+                        <button class="btn btn-sm btn-outline add-to-cart" data-product="Lumina Elite 1500">Add to
+                            Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as Home) -->
+    <footer class="footer">
+        <div class="container grid-4">
+            <div>
+                <h4 style="color: white; margin-bottom: 1rem;">LUMINA.</h4>
+                <p style="font-size: 0.9rem; color: #94A3B8;">Advanced LED therapy solutions.</p>
+            </div>
+            <!-- ... simplified footer for brevity in this file ... -->
+            <div>
+                <p style="color: #64748B;">© 2025 Lumina Bio Modulation.</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

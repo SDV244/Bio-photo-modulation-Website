@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Science | Lumina</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container flex-between">
+            <div class="logo">
+                <a href="/" style="font-size: 1.5rem; font-weight: 800; color: var(--color-primary);">
+                    LUMINA<span style="color: var(--color-accent);">.</span>
+                </a>
+            </div>
+            <nav class="nav-menu flex-center" style="gap: 2rem;">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/products/" class="nav-link">Products</a>
+                <a href="/science/" class="nav-link active">Science</a>
+                <a href="/sports/" class="nav-link">Sports</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </nav>
+            <div class="actions flex-center">
+                <a href="/contact/" class="btn btn-primary">Request Info</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container grid-2 flex-center">
+            <div>
+                <h1 class="mb-2">What is Photobiomodulation?</h1>
+                <p class="mb-2">Photobiomodulation (PBM), also known as Low-Level Laser Therapy (LLLT), is the use of
+                    specific wavelengths of light (red and near-infrared) to stimulate healing and reduce inflammation.
+                </p>
+                <p>It works at a cellular level, enhancing the function of mitochondria—the powerhouses of your cells.
+                </p>
+            </div>
+            <div
+                style="background: #e2e8f0; height: 300px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center;">
+                <span>[Diagram: Light penetrating skin -> Mitochondria]</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: white;">
+        <div class="container">
+            <h2 class="text-center mb-4">How It Works</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3 class="text-accent">1. Absorption</h3>
+                    <p>Red (660nm) and Near-Infrared (850nm) light is absorbed by the skin and deeper tissues.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-accent">2. Stimulation</h3>
+                    <p>The light stimulates Cytochrome C Oxidase in the mitochondria, boosting ATP production.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-accent">3. Regeneration</h3>
+                    <p>Increased cellular energy leads to faster repair, reduced oxidative stress, and lower
+                        inflammation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Scientific References</h2>
+            <ul style="color: var(--color-text-light); font-size: 0.9rem; list-style: disc; padding-left: 1.5rem;">
+                <li class="mb-1">Hamblin, M. R. (2017). Mechanisms and applications of the anti-inflammatory effects of
+                    photobiomodulation. *AIMS Biophysics*.</li>
+                <li class="mb-1">Ferraresi, C., et al. (2016). Photobiomodulation in human muscle tissue: an advantage
+                    in sports performance? *Journal of Biophotonics*.</li>
+            </ul>
+        </div>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
